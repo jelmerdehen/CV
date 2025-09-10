@@ -226,6 +226,7 @@
  }
 \NewInfoField{linkedin}{\faLinkedin}[https://linkedin.com/in/]
 \NewInfoField{github}{\faGithub}[https://github.com/]
+\NewInfoField{instagram}{\faInstagram}[https://www.instagram.com/]
 % v1.7.3 Backward compatibility for ORCiD icon
 \ifdef{\faOrcid}{
   \NewInfoField{orcid}{\faOrcid}[https://orcid.org/]
