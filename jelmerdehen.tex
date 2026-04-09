@@ -5,7 +5,7 @@
 
 \usepackage{paracol}
 
-% Set fonts (for XeLaTeX/LuaLaTeX; adjust for pdfLaTeX if needed)
+% Set fonts (for XeLaTeX/LuaLaTeX)
 \setmainfont{Montserrat}[BoldFont={Montserrat ExtraBold}]
 \setsansfont{Lato}
 \renewcommand{\familydefault}{\sfdefault}
@@ -24,7 +24,7 @@
 \colorlet{heading}{Primary}
 % Line under headers
 \colorlet{headingrule}{Secondary}
-% Personal fields (awesome5 icons), company names, cirlces in right column
+% Personal fields (awesome5 icons), company names, circles in right column
 \colorlet{accent}{Secondary}
 % Used for titles, and right column names
 \colorlet{emphasis}{Primary}
@@ -44,7 +44,7 @@
 \begin{document}
 \name{Jelmer de Hen}
 \tagline{Security Researcher}
-\photoR{2.8cm}{jelmerdehen.jpg}
+% \photoR{2.8cm}{jelmerdehen.jpg}
 
 \personalinfo{%
   \email{jelmer@gcb.io}
@@ -57,7 +57,7 @@
 
 \begin{center}
 \small
-\textcolor{body}{Seasoned security researcher with over a decade of expertise in application security, red teaming, and reverse engineering.\\Specialized in mobile security and threat hunting, I have consistently identified and mitigated critical vulnerabilities including high-impact Android flaws affecting over a billion devices.}
+\textcolor{body}{Security researcher with over 15 years of experience in application security, reverse engineering, threat hunting, and red teaming.\\Identified high-severity vulnerabilities in Samsung, Google, and Mozilla products affecting hundreds of millions of devices.\\Led Android threat-hunting R\&D at iVerify (Trail of Bits) to detect mercenary spyware.}
 \end{center}
 
 \columnratio{0.6}
@@ -65,20 +65,45 @@
 \begin{paracol}{2}
 \cvsection{Experience}
 
-\cvevent{Head of Android R\&D}{Trail of Bits / iVerify}{2022 -- 2024}{New York, United States}
+\cvevent{Founder}{General Cyber Ballistics}{2014 -- Present}{}
 \begin{itemize}
-\item Led the Android threat-hunting initiative, developing solutions to identify mercenary spyware on mobile devices.
-\item Directed Android malware identification efforts targeting high-profile targets in civil society and tech.
-\item Developed and implemented advanced malware detection capabilities for Android.
-\item Development of the iVerify Android application and backend infrastructure.
+\item Offensive security services: red team engagements, secure code audits, and penetration testing.
+\item IoT and embedded device security: firmware extraction, reverse engineering, and protocol fuzzing.
+\item Develop custom offensive tooling for automated vulnerability discovery.
+\item Build fuzz harnesses for exotic architectures and embedded platforms.
+\item Samsung security research: critical vulnerabilities in Android, Knox MDM, and SSO (CVE-2019-20613).
 \end{itemize}
 
 \divider
 \vspace{0.5em}
 
-\cvevent{Senior Information Technology Consultant}{Include Security}{2020 -- 2022}{New York, United States}
+\cvevent{Security Researcher}{Radically Open Security \textperiodcentered{} Contract}{2025 -- Present}{Amsterdam, Netherlands}
 \begin{itemize}
-\item Performed secure code reviews and penetration testing for Fortune 500 clients, resolving critical vulnerabilities and delivering detailed technical reports.
+\item Penetration testing and source code audits across diverse targets and environments.
+\end{itemize}
+
+\divider
+\vspace{0.5em}
+
+\cvevent{Security Researcher}{Cure53 \textperiodcentered{} Contract}{2025 -- Present}{Berlin, Germany}
+\begin{itemize}
+\item Penetration testing and source code audits across mobile, cloud, blockchain, healthcare, and identity platforms.
+\end{itemize}
+
+\divider
+\vspace{0.5em}
+
+\cvevent{Head of Android R\&D}{Trail of Bits / iVerify}{2022 -- 2024}{New York, United States}
+\begin{itemize}
+\item Led the Android threat-hunting initiative to identify mercenary spyware (Pegasus, Predator) on mobile devices.
+\item Developed the iVerify Android application, malware detection engine, and backend infrastructure.
+\end{itemize}
+
+\newpage
+
+\cvevent{Senior Security Researcher}{Include Security}{2020 -- 2022}{New York, United States}
+\begin{itemize}
+\item Secure code reviews and penetration testing for Fortune 500 clients across web, mobile, and cloud environments.
 \end{itemize}
 
 \divider
@@ -86,27 +111,16 @@
 
 \cvevent{Senior IT Security Researcher}{Cycura}{2015 -- 2020}{Toronto, Canada}
 \begin{itemize}
-\item Conducted secure code reviews, black/whitebox engagements, incident response, exploit development, development of implants and performing physical security audits.
-\item Auditing the security of critical infrastructure in sectors such as healthcare and energy.
+\item Exploit and implant development, code reviews, and pentesting.
+\item Physical security audits for healthcare and energy sectors.
 \end{itemize}
 
 \divider
 \vspace{0.5em}
 
-\cvevent{Founder}{General Cyber Ballistics}{2014 -- Present}{Universe, Earth}
+\cvevent{Forensics / eDiscovery}{Holland Integrity Group}{2011 -- 2014}{Almere, Netherlands}
 \begin{itemize}
-\item Deliver IT security services such as secure code audits and penetration testing.
-\item Perform deep security research and build tooling to assist this.
-\item Contributed to Bug Bounty programs on platforms like HackerOne, Bugcrowd, and Synack, identifying many critical vulnerabilities over time. Also took part in live hacking events of HackerOne, winning a few.
-\end{itemize}
-
-\newpage
-
-\cvevent{Forensics/eDiscovery}{Holland Integrity Group}{2011 -- 2014}{Almere, Netherlands}
-\begin{itemize}
-\item The collection, digitization, conversion (OCR), and data indexing to assist financial fraud investigations.
-\item Parsing of unknown file formats, making them usable for investigators.
-\item Supervise the digitization process of physical documents.
+\item Digital forensics, reverse engineering of proprietary file formats, and data indexing for financial fraud investigations.
 \end{itemize}
 
 \divider
@@ -114,8 +128,7 @@
 
 \cvevent{Fullstack Developer}{E11EVEN}{2011 -- 2014}{Apeldoorn, Netherlands}
 \begin{itemize}
-\item Development of APO11O -- a platform to load data, index it, make it searchable, and collaboratively perform investigations.
-\item Facilitate IT security services such as penetration testing, incident response, and computer forensics.
+\item Built APO11O -- a data ingestion and search platform for collaborative investigations. Also performed penetration testing, incident response, and computer forensics.
 \end{itemize}
 
 \divider
@@ -123,74 +136,65 @@
 
 \cvevent{Content Manager}{Certified Secure}{2010 -- 2011}{The Hague, Netherlands}
 \begin{itemize}
-\item Created hacking challenges and educational content in the form of guides and videos.
-\item Research and publish computer security research with the community.
-\item Maintain activity on social channels.
+\item Created hacking challenges, educational content, and published security research with the community.
 \end{itemize}
-
-\newpage
 
 \switchcolumn
 
 \cvsection{Key Skills}
 
-\cvtag{Reverse Engineering}
 \cvtag{Application Security}\\
-\cvtag{Threat Hunting}
-\cvtag{Android Security}\\
-\cvtag{Report Writing}
+\cvtag{Binary Analysis}\\
+\cvtag{Cloud \& Kubernetes Security}\\
+\cvtag{Dynamic Instrumentation}\\
+\cvtag{Exploit Development}\\
 \cvtag{Fuzzing}
-\cvtag{Assembly}
-\cvtag{Embedded Security}
+\cvtag{Hardware Security}\\
+\cvtag{IoT \& Firmware Analysis}\\
+\cvtag{Mobile Security}\\
+\cvtag{Red Teaming}\\
+\cvtag{Reverse Engineering}\\
+\cvtag{Threat Hunting}
 
-\divider\smallskip
 \vspace{0.5em}
 
 \cvsection{Programming}
 
-\cvskill{Go}{5} \smallskip
-\cvskill{PHP}{5} \smallskip
-\cvskill{JavaScript/TypeScript}{5} \smallskip
-\cvskill{SQL}{5} \smallskip
-\cvskill{Kotlin}{5} \smallskip
-\cvskill{Java}{4} \smallskip
-\cvskill{C}{4} \smallskip
-\cvskill{Python}{4} \smallskip
-\cvskill{Node.js}{4} \smallskip
-\cvskill{Smali}{3} \smallskip
-\cvskill{C++}{2}
+\cvtag{C}
+\cvtag{Go}
+\cvtag{Java}\\
+\cvtag{Kotlin}
+\cvtag{PHP}
+\cvtag{Python}
 
 \vspace{0.5em}
+
 \cvsection{Languages}
 
-\cvskill{Dutch}{5} \smallskip
-\cvskill{English}{5} \smallskip
-\cvskill{French}{3} \smallskip
-\cvskill{German}{3}
-
-\pagebreak
+\cvtag{Dutch}
+\cvtag{English}
 
 \cvsection{Honors \& Awards}
 
 \begin{itemize}
-\item Google Security Hall of Fame (Aug 2011)
-\item Barracuda Bug Bounty Hall of Fame (Mar 2013)
-\item Mozilla Web And Services Bug Bounty Hall of Fame (Nov 2013)
-\item Detectify Hall of Fame (Nov 2013)
-\item Salesforce Hall of Fame (Jan 2016)
+\item Samsung Mobile Security Hall of Fame (2019)
+\item Salesforce Hall of Fame (2016)
+\item Mozilla Bug Bounty Hall of Fame (2013)
+\item Google Security Hall of Fame (2011)
 \end{itemize}
 
 \vspace{0.5em}
-\cvsection{HackerOne events}
+\cvsection{HackerOne Events}
 
 \begin{itemize}
-\item H1-702 2016 (2nd place)
-\item H1-415 2017
-\item H1-702 2017
-\item H1-3120 2018
 \item H1-702 2018 (1st place, team)
-\item H1-4420 2019
+\item H1-702 2016 (2nd place)
+\item H1-4420 London 2019
+\item H1-3120 Amsterdam 2018
+\item H1-415 San Francisco 2017
+\item H1-702 Las Vegas 2017
 \end{itemize}
+
 
 \end{paracol}
 
